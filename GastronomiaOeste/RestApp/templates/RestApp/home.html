@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <body>
+            <nav class="navbar navbar-light bg-light static-top">
+                <div class="container">
+                    <a class="navbar-brand" href="{% url 'Moron' %}">Moron</a>
+                    <a class="navbar-brand" href="{% url 'Haedo' %}">Haedo</a>
+                    <a class="navbar-brand" href="{% url 'Ituzaingo' %}">Ituzaingo</a>
+                    <a class="navbar-brand" href="{% url 'Castelar' %}">Castelar</a>
+                    <a class="navbar-brand" href="{% url 'Ramos'%}">Ramos</a>
+                    <a class="navbar-brand" href="{% url 'SobreNosotros'%}">Sobre Nosotros</a>
+                </div>
+            </nav>
+        {% for asd in zonas %}
+
+            <li>{{asd}}</li>
+
+        {%endfor%}
+        
+    </body>
+</html>
